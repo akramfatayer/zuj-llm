@@ -33,7 +33,8 @@ Course page and interactive modules: https://akramfatayer.github.io/courses/llm
 ```
 lectures/     — Weekly slides (PDF)
 labs/
-  lab-01-hello-llm/   — Next-token probabilities, the generation loop, chat templates, failure log
+  lab-01-hello-llm/          — Next-token probabilities, the generation loop, chat templates, failure log
+  lab-02-tokens-embeddings/  — Five tokenizers, fertility and cost in Arabic and English, embeddings; mini-assignment 1 brief
 project/      — Team project brief and rubric (published in week 3)
 ```
 
