@@ -1,0 +1,6 @@
+# Solution notebooks stay on the instructor's machine
+instructor/
+
+.ipynb_checkpoints/
+__pycache__/
+lab*_failures.csv
