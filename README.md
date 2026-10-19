@@ -36,9 +36,10 @@ labs/
   lab-01-hello-llm/          — Next-token probabilities, the generation loop, chat templates, failure log
   lab-02-tokens-embeddings/  — Five tokenizers, fertility and cost in Arabic and English, embeddings; mini-assignment 1 brief
 project/      — Team project brief and rubric (published in week 3)
+setup/        — Lab PC setup: requirements.txt, prefetch_models.py (downloads every model), check_lab_pc.py
 ```
 
 ## Running the labs
 
-- **GPU lab:** models are cached on the machines. Set `LAB_MODEL`, `LAB_SERVER` and `LAB_SERVER_MODEL` to point the notebooks at the local model server.
+- **GPU lab:** models are cached on the machines (lab supervisors: run `setup/prefetch_models.py`, then `setup/check_lab_pc.py`). Set `LAB_MODEL`, `LAB_SERVER` and `LAB_SERVER_MODEL` to point the notebooks at the local model server.
 - **Colab:** open a notebook with its *Open in Colab* badge and choose a T4 GPU runtime.

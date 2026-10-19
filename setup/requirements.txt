@@ -1,0 +1,16 @@
+# Python packages for the LLM course labs (weeks 1–2).
+# Install PyTorch FIRST, with the CUDA build that matches the lab GPUs' driver:
+#   https://pytorch.org/get-started/locally/
+#   e.g.  pip install torch --index-url https://download.pytorch.org/whl/cu126
+# Then:   pip install -r requirements.txt
+transformers>=4.56
+accelerate
+huggingface_hub
+sentencepiece
+protobuf
+openai
+requests
+pandas
+matplotlib
+jupyterlab
+ipykernel
