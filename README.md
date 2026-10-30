@@ -35,7 +35,8 @@ lectures/     — Weekly slides (PDF)
 labs/
   lab-01-hello-llm/          — Next-token probabilities, the generation loop, chat templates, failure log
   lab-02-tokens-embeddings/  — Five tokenizers, fertility and cost in Arabic and English, embeddings; mini-assignment 1 brief
-project/      — Team project brief and rubric (published in week 3)
+  lab-03-attention/          — Attention, causal mask and multi-head attention from scratch; attention heads inside Qwen2.5
+project/      — Team project brief: five phases, example projects and the rubric for each phase
 setup/        — Lab PC setup: requirements.txt, prefetch_models.py (downloads every model), check_lab_pc.py
 ```
 
