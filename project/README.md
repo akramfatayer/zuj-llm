@@ -1,7 +1,7 @@
 # Team Project: An LLM Application with Retrieval and Tools
 
 **Course:** Large Language Models and Query Engineering · **Released:** week 3 · Supports CLO3–CLO7
-**Weight:** 30% of the course grade, in five phases · **Teams of 3–4** · **Final demos:** week 15
+**Weight:** 30 marks of the course grade, in three phases of 10 marks · **Teams of 3–4** · **Final demos:** week 15
 
 ## The task
 
@@ -16,16 +16,16 @@ You will learn the pieces as the course goes: prompting in weeks 6–8, retrieva
 
 ## Phases and deadlines
 
-| When | Phase | What you hand in | Weight |
+The project has three phases, each worth 10 marks (30 in total), graded on the faculty's PBL Evaluation Form.
+
+| When | Phase | What you hand in | Marks |
 |---|---|---|---|
 | Week 4 lab | — | Team of 3–4 registered on Moodle, with a working title | — |
-| Week 7 | **1 · Proposal and data plan** | A 2-page proposal (template below) | 3% |
-| Week 10 | **2 · Dataset and test set** | The document collection, the test set and a one-page datasheet | 3% |
-| Week 12 | **3 · Working prototype** | A live demo in the lab and a repository that runs from its README | 4% |
-| Week 14 | **4 · Evaluation and red-team report** | Results on the test set and a red-team log, 3–4 pages | 4% |
-| Week 15 | **5 · Final demo, report and code** | A 10-minute demo, a report of at most 8 pages, the final code | 16% |
+| Week 7 | **1 · Problem definition and planning** | A 2-page proposal and data plan (template below) | 10 |
+| Week 10 | **2 · Design and implementation** | The document collection, the test set, a one-page datasheet and a one-page system design | 10 |
+| Weeks 12–15 | **3 · Testing, evaluation and final submission** | Week 12: a working prototype in the lab. Week 14: the evaluation and red-team report. Week 15: the final demo, report and code | 10 |
 
-Phases 1–4 are due at the start of that week's lab session. Late work loses 10% per day, up to three days, and is not accepted afterwards without a documented excuse.
+Every deliverable is submitted on Moodle by the start of that week's lab session. Late work loses 10% per day, up to three days, and is not accepted afterwards without a documented excuse.
 
 ## Example projects
 
@@ -46,9 +46,9 @@ These show the expected size. You may take one, adapt one or propose your own.
 - **Data:** public or properly licensed documents only, with the source and licence recorded in your datasheet. No personal data about real people.
 - **Compute:** everything must run in the GPU lab or on a free Colab T4. If your design needs more, simplify it.
 - **AI assistants:** allowed for brainstorming, debugging and editing, with a short disclosure in each submission stating which tool you used and for what. Every member must be able to explain any part of the code or report; work no member can explain is graded as not the team's.
-- **Contribution:** the final report ends with a contribution statement signed by every member. The instructors may adjust an individual's Phase 5 mark when the statements and the repository history show a clearly unequal share.
+- **Contribution:** the final report ends with a contribution statement signed by every member. The instructors may adjust an individual's Phase 3 mark when the statements and the repository history show a clearly unequal share.
 
-## Phase 1 · Proposal and data plan (week 7, 3%)
+## Phase 1 · Problem definition and planning (week 7, 10 marks)
 
 At most two pages:
 
@@ -59,6 +59,8 @@ At most two pages:
 5. **Risks:** what could go wrong (data access, wrong answers that could harm a user, prompt injection) and what you will do about it.
 6. **Roles:** who leads data, retrieval, the tool and evaluation. Everyone writes code.
 
+Each criterion is scored 0, 1 or 2; the total (out of 8) is scaled to 10 marks. Phase 2 is scored the same way (out of 8, scaled to 10).
+
 | Criterion | 2 — complete | 1 — partial | 0 — missing |
 |---|---|---|---|
 | **Problem** | Real users and a clear need | Vague users or need | Missing |
@@ -66,19 +68,25 @@ At most two pages:
 | **Data plan** | Sources named, licence checked, size estimated | Sources named only | Missing |
 | **Tool and risks** | Tool justified by example questions; risks with responses | One of the two thin | Missing |
 
-## Phase 2 · Dataset and test set (week 10, 3%)
+## Phase 2 · Design and implementation (week 10, 10 marks)
 
 - **Document collection:** cleaned text, ready to split into chunks, with one record per document (title, source URL, licence, date, language). Aim for at least 50 documents or 100 pages.
 - **Test set:** at least 40 questions with a reference answer and the document that supports it. Include at least 10 questions that need the tool, at least 5 that your documents **cannot** answer (the right response is "I don't know"), and, for an Arabic project, at least half in Arabic.
 - **Datasheet (one page):** what the collection covers and what it leaves out, how it was collected, known gaps and biases.
+- **System design (one page):** a diagram of your pipeline (retrieval, tool, generation) and your first choices of embedding model, chunk size and generator, with the reason for each. You will test these choices in Phase 3.
 
 | Criterion | 2 — complete | 1 — partial | 0 — missing |
 |---|---|---|---|
 | **Collection** | Clean, documented, large enough to need retrieval | Small, or poorly documented | Missing |
 | **Test set** | 40+ questions with references, tool and unanswerable questions included | Fewer, or missing a category | Missing |
 | **Datasheet** | Coverage, collection and gaps described honestly | Partial | Missing |
+| **Design** | Pipeline drawn, choices stated with reasons | Pipeline only, no reasons | Missing |
 
-## Phase 3 · Working prototype (week 12, 4%)
+## Phase 3 · Testing, evaluation and final submission (weeks 12–15, 10 marks)
+
+Phase 3 has three parts, marked together out of 10: the prototype (2 marks), the evaluation and red-team report (3 marks) and the final submission (5 marks).
+
+### Week 12 · Working prototype (2 marks)
 
 Show it working end to end in the lab: a question goes in, passages are retrieved, the tool is called when needed, and the answer comes back with citations. Submit a repository whose README lets another team run it on Colab.
 
@@ -88,7 +96,7 @@ Show it working end to end in the lab: a question goes in, passages are retrieve
 | **Tool call** | The model calls the tool correctly when a question needs it | Tool works only when forced, or fails often | Missing |
 | **Runs from the README** | Another team can run it | Runs with help | Does not run |
 
-## Phase 4 · Evaluation and red-team report (week 14, 4%)
+### Week 14 · Evaluation and red-team report (3 marks)
 
 3–4 pages, using the methods of weeks 12 and 13:
 
@@ -102,13 +110,15 @@ Show it working end to end in the lab: a question goes in, passages are retrieve
 | **Red-team** | 10+ attempts in both languages, with fixes | Fewer, or no fixes | Missing |
 | **Error analysis** | Failures grouped by cause, with examples | Failures listed only | Missing |
 
-## Phase 5 · Final demo, report and code (week 15, 16%)
+### Week 15 · Final demo, report and code (5 marks)
 
 - **Demo:** 10 minutes plus 5 minutes of questions. Every member presents a part.
-- **Report:** at most 8 pages: the problem, the design and why you chose it, the final evaluation (updated from Phase 4), what you would do with more time, the AI-use disclosure and the contribution statement.
+- **Report:** at most 8 pages: the problem, the design and why you chose it, the final evaluation (updated from week 14), what you would do with more time, the AI-use disclosure and the contribution statement.
 - **Code:** the final repository, tagged, running from its README.
 
-| Criterion | Weight | Excellent | Adequate | Weak |
+The final submission's 5 marks are shared as follows:
+
+| Criterion | Share | Excellent | Adequate | Weak |
 |---|---|---|---|---|
 | **Problem and design** | 20% | A real need; design choices justified with evidence (e.g. a chunk size or model chosen by measurement) | Reasonable design, little justification | Unclear problem or design |
 | **Implementation** | 30% | Retrieval, tool use and generation work reliably; clean, documented code | Works with gaps or fragile parts | Partly working |

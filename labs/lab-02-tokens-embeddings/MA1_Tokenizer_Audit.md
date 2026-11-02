@@ -1,7 +1,7 @@
 # Mini-assignment 1: Tokenizer Audit
 
 **Course:** Large Language Models and Query Engineering · **Week 2** · Supports CLO1
-**Weight:** graded out of 10, part of the assignments (30% of the course grade) · **Individual work** · **Due:** start of the week 3 lab session, on the LMS
+**Weight:** 5 marks, the graded assignment of lab experiment 2 (lab experiments carry 30 marks) · **Individual work** · **Due:** start of the week 3 lab session, on the LMS
 
 ## The question
 
@@ -24,7 +24,7 @@ Start from your copy of the Lab 02 notebook. Lab work was done in pairs; this as
 
 ## How it is graded
 
-Each criterion is scored 0, 1 or 2. The total (out of 8) is scaled to a mark out of 10.
+Each criterion is scored 0, 1 or 2. The total (out of 8) is scaled to 5 marks.
 
 | Criterion | 2 — complete | 1 — partial | 0 — missing |
 |---|---|---|---|
